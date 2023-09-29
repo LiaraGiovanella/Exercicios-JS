@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(98, 52, 141);
+    font: normal 16pt Courier New, monospace;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    padding: 3%;
+}
+
+#boneco {
+    display: flex;
+}
+
+#msg {
+    width: 200px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px black;
+    border-radius: 50px 50px 50px 0px;
+}
+
+#bemVindo {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+}
+
+.animacao {
+    animation: animacao 2s steps(25) 1s infinite normal;
+}
+
+#img {
+    width: 200px;
+}
+
+hr {
+    margin: 20px;
+}
+
+#exer {
+    text-align: left;
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+}
+
+a:hover {
+    color: black;
+}
+
+/* Animação da Mensagem */
+
+@keyframes animacao {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14pt;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    #msg {
+        width: 50%;
+    }
+
+    #img {
+        width: 150px;
+    }
+}
