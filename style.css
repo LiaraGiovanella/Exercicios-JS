@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(98, 52, 141);
+    background-color: rgb(197, 135, 255);
     font: normal 16pt Courier New, monospace;
 }
 
@@ -16,6 +16,7 @@ section {
     text-align: center;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 3%;
 }
 
@@ -33,6 +34,7 @@ section {
     background-color: rgb(255, 255, 255);
     border: solid 2px black;
     border-radius: 50px 50px 50px 0px;
+    box-shadow: inset -3px -3px 1px rgb(150, 150, 150);
 }
 
 #bemVindo {
@@ -51,12 +53,14 @@ section {
 }
 
 hr {
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #exer {
     text-align: left;
     margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -79,6 +83,55 @@ a:hover {
     to {
         width: 200px;
     }
+}
+
+/* Média */
+
+#media {
+    text-align: left;
+    font: normal 14pt Arial;
+}
+
+#titulo-media {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#num {
+    height: 20px;
+    outline-color: purple;
+}
+
+.button-media {
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: solid 0.5px rgb(196, 119, 231);
+}
+
+.button-media:hover {
+    background-color: rgb(236, 194, 255);
+}
+
+.button-media:active {
+    background-color: rgb(191, 121, 231);
+    color: white;
+}
+
+#valores {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#res {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 500px) {
