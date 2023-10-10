@@ -12,3 +12,23 @@ function carregarPagina(busca) {
     requisicao.open('GET', `${busca}.html`)
     requisicao.send()
 }
+
+function parImpar() {
+    var num = document.querySelector('#num')
+    var res = document.querySelector('#res')
+
+
+    if (num.value.length == 0) {
+        alert("Insira um valor para verificar!")
+        res.innerHTML = "Insira um número acima para obter a resposta..."
+
+    } else {
+        num = Number(num.value)
+        if (num % 2 == 0) {
+            res.innerHTML = `O número ${num} é <b>par</b>!`
+
+        } else {
+            res.innerHTML = `O número ${num} é <b>ímpar</b>!`
+        }
+    }
+}
