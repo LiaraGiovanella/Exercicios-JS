@@ -85,14 +85,14 @@ a:hover {
     }
 }
 
-/* Média */
+/* Exercícios */
 
-#media {
+#exercicio {
     text-align: left;
     font: normal 14pt Arial;
 }
 
-#titulo-media {
+#titulo-exercicios {
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -101,7 +101,7 @@ a:hover {
     outline-color: purple;
 }
 
-.button-media {
+.button-ex {
     background-color: white;
     border: none;
     font-weight: 600;
@@ -113,11 +113,11 @@ a:hover {
     border: solid 0.5px rgb(196, 119, 231);
 }
 
-.button-media:hover {
+.button-ex:hover {
     background-color: rgb(236, 194, 255);
 }
 
-.button-media:active {
+.button-ex:active {
     background-color: rgb(191, 121, 231);
     color: white;
 }
