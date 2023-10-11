@@ -145,10 +145,24 @@ a:hover {
     }
 
     #msg {
+        font-size: 12pt;
+        margin-left: -10px;
         width: 50%;
+        padding: 10px;
+        padding-left: 8px;
+        padding-right: 0px;
     }
 
     #img {
-        width: 150px;
+        width: 140px;
+    }
+
+    #exercicio {
+        padding: 20px;
+    }
+
+    #num {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }

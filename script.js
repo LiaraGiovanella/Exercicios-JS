@@ -44,6 +44,7 @@ function adicionar() {
 function limpar() {
     lista = []
     valores.innerHTML = '<option>Adicione um valor acima</option>'
+    res.innerHTML = "Insira um número acima para obter a resposta..."
 }
 
 function calcular() {
