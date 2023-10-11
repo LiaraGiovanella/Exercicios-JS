@@ -17,12 +17,50 @@ function carregarPagina(busca) {
 
 // Media
 
-function adicionar() {
+var lista = []
 
+function adicionar() {
+    var num = document.querySelector('#num')
+    var valores = document.querySelector('#valores')
+
+    if (num.value.length == 0) {
+        alert('Insira um valor para calcular a média!')
+    } else {
+        lista.push(num.value)
+        valores.innerHTML = ''
+
+        for (var i = 0; i < lista.length; i++) {
+            var item = document.createElement('option')
+            item.text = `Valor ${lista[i]} adicionado`
+            valores.appendChild(item)
+        }
+    }
+
+    num.value = ''
+    num.focus()
+    return lista
+}
+
+function limpar() {
+    lista = []
+    valores.innerHTML = '<option>Adicione um valor acima</option>'
 }
 
 function calcular() {
+    var res = document.querySelector('#res')
 
+    if (lista == '') {
+        alert('Adicione valores para calcular!')
+        res.innerHTML = 'Insira valores acima para ter a resposta...'
+    } else {
+        var soma = 0
+        for (var i = 0; i < lista.length; i++) {
+            soma += Number(lista[i])
+        }
+
+        var media = soma / lista.length
+        res.innerHTML = `A média dos valores é <b>${media.toFixed(2)}</b>`
+    }
 }
 
 // Par ou Impar

@@ -5,13 +5,14 @@
 
     <label for="Valor">Insira o valor:</label>
     <input type="number" id="num">
-    <button type="button" class="button-ex">Adicionar valor</button>
+    <button type="button" class="button-ex" onclick="adicionar()">Adicionar valor</button>
 
     <select name="select" id="valores" size="5">
         <option value="">Adicione um valor acima</option>
     </select>
 
-    <button type="button" class="button-ex">Resultado</button>
+    <button type="button" class="button-ex" onclick="calcular()">Resultado</button>
+    <button type="button" class="button-ex" onclick="limpar()">Limpar</button>
 
     <div id="res">Insira valores acima para ter a resposta...</div>
 
