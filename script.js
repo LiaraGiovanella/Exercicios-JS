@@ -95,6 +95,7 @@ function fatoracao() {
 
     if (num.value.length == 0) {
         alert('Insira um valor para calcular!')
+        res.innerHTML
     } else {
         num = Number(num.value)
         var mult = 1
@@ -102,5 +103,34 @@ function fatoracao() {
             mult *= i
         }
         res.innerHTML = `O fatorial de ${num} é <b>${mult}</b>`
+    }
+}
+
+// Soma ABC
+
+function somaabc() {
+    var a = document.querySelector('#num-a')
+    var b = document.querySelector('#num-b')
+    var c = document.querySelector('#num-c')
+    var res = document.querySelector('#res')
+
+    if (a.value.length == 0 || b.value.length == 0 || c.value.length == 0) {
+        alert("Confira os campos e tente novamente :)")
+        res.innerHTML = "Insira um número acima para obter a resposta..."
+
+    } else {
+        a = Number(a.value)
+        b = Number(b.value)
+        c = Number(c.value)
+        var soma = a + b
+
+        res.innerHTML = `A soma entre A e B é ${soma} <br><br>`
+
+        if (soma > c) {
+            res.innerHTML += `A soma é MAIOR que C = ${c}`
+        } else {
+            res.innerHTML += `A soma é MENOR que C = ${c}`
+        }
+
     }
 }

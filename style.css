@@ -135,6 +135,10 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.input-abc {
+    margin-bottom: 20px;
+}
+
 @media (max-width: 500px) {
     body {
         font-size: 14pt;
