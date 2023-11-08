@@ -95,7 +95,7 @@ function fatoracao() {
 
     if (num.value.length == 0) {
         alert('Insira um valor para calcular!')
-        res.innerHTML
+        res.innerHTML = 'Insira um número acima para obter a resposta...'
     } else {
         num = Number(num.value)
         var mult = 1
@@ -116,7 +116,7 @@ function somaabc() {
 
     if (a.value.length == 0 || b.value.length == 0 || c.value.length == 0) {
         alert("Confira os campos e tente novamente :)")
-        res.innerHTML = "Insira um número acima para obter a resposta..."
+        res.innerHTML = "Preencha acima para obter a resposta..."
 
     } else {
         a = Number(a.value)
@@ -127,10 +127,33 @@ function somaabc() {
         res.innerHTML = `A soma entre A e B é ${soma} <br><br>`
 
         if (soma > c) {
-            res.innerHTML += `A soma é MAIOR que C = ${c}`
+            res.innerHTML += `A soma é <b>MAIOR</b> (C = ${c})`
+        } else if (soma < c) {
+            res.innerHTML += `A soma é <b>MENOR</b> (C = ${c})`
         } else {
-            res.innerHTML += `A soma é MENOR que C = ${c}`
+            res.innerHTML += `A soma é <b>IGUAL</b> (C = ${c})`
         }
 
+    }
+}
+
+// Desconto
+
+function desconto() {
+    let valor = document.querySelector('#valor')
+    let desconto = document.querySelector('#desconto')
+    let res = document.querySelector('#res')
+
+    if (valor.value.length == 0 || desconto.value.length == 0) {
+        alert("Verifique os campos e tente novamente :)")
+        res.innerHTML = 'Preencha acima para obter a resposta...'
+    } else {
+        valor = Number(valor.value)
+        desconto = Number(desconto.value)
+
+        let porc = (desconto / 100) * valor
+        let valor_novo = valor - porc
+
+        res.innerHTML = `Com um deconto de ${desconto}% o novo valor é de <b>${valor_novo.toFixed(2)}</b>`
     }
 }

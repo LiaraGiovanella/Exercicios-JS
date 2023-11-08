@@ -96,7 +96,7 @@ a:hover {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#num {
+.input {
     height: 20px;
     outline-color: purple;
     padding-left: 5px;
@@ -165,7 +165,7 @@ a:hover {
         padding: 20px;
     }
 
-    #num {
+    .input {
         margin-top: 10px;
         margin-bottom: 10px;
     }
